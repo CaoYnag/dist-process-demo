@@ -23,7 +23,7 @@ if(UNIX)
 endif()
 
 add_executable(${PROJECT_NAME} STATIC ${SRC})
-target_link_libraries(${LIB_NAME} dpd)
+target_link_libraries(${PROJECT_NAME} dpd zmq)
 if(WIN32)
 endif()
 if(UNIX)
