@@ -10,5 +10,5 @@ class SerializerFactory
 public:
     ~SerializerFactory();
 
-    shared_ptr<Serializer> get();
+    static shared_ptr<Serializer> get();
 };

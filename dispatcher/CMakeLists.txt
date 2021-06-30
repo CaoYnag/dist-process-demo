@@ -22,7 +22,7 @@ if(UNIX)
 	add_compile_options("-static")
 endif()
 
-add_executable(${PROJECT_NAME} STATIC ${SRC})
+add_executable(${PROJECT_NAME} ${SRC})
 target_link_libraries(${PROJECT_NAME} dpd zmq)
 if(WIN32)
 endif()

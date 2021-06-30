@@ -20,7 +20,7 @@ if(WIN32)
 endif()
 
 set(SRC
-    ${PROJECT_SOURCE_DIR}/test.cpp
+    ${PROJECT_SOURCE_DIR}/source.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SRC})

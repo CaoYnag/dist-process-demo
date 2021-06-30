@@ -20,6 +20,6 @@ string JsonSerializer::serialize(shared_ptr<task_t> task)
 shared_ptr<task_t> JsonSerializer::deserialize(const string& data)
 {
     json j = json::parse(data);
-    return make_shared<tasK_t>(j["id"], j["state"], j["name"], j["conf"]);
+    return make_shared<task_t>(j["id"], j["state"], j["name"], j["conf"]);
 }
 
